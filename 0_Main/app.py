@@ -32,6 +32,9 @@ update_views(data_source)
 ## Create a dash application
 app = dash.Dash(__name__)
 
+## Dashborad web server
+server = app.server
+
 ## Callback of the Application
 callbacks(app, data_source)
 
